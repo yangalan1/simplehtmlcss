@@ -88,16 +88,39 @@ a:link{text-decoration: none}
 
 /* 5. Add style to your images focusing on the box model. */
 
-img{
+div img{
     margin: 12px;
     width: 325px;
+    padding: 10px;
     border: 3px solid black;
     border-radius: 20px;
 }
 
 /* 6. Add a hover style to your images */ 
 
-img:hover{
-   box-shadow: 5px 5px black;
-   transition: box-shadow 0.2s ease-in-out;
+div img:nth-child(even):hover{
+    box-shadow: 5px 5px black;
+    filter: hue-rotate(45deg);
+    transition: box-shadow 0.2s ease-in-out;
 }
+
+.flags_one img:hover:nth-child(3n){
+    box-shadow: 5px 5px tan;
+    border: 3px solid #654321;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.flags_two img:hover:nth-child(3n){
+    box-shadow: 5px 5px tan;
+    border: 3px solid #654321;
+    filter: hue-rotate(45deg);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.flags_three img:hover:nth-child(3n){
+    box-shadow: 5px 5px tan;
+    border: 3px solid #654321;
+    filter: grayscale(50%);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
